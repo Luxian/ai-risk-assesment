@@ -1,0 +1,255 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+/* Container and layout */
+#app {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #34495e;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+/* Fieldset styling */
+fieldset {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 40px;
+    background-color: #f8f9fa;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #495057;
+    padding: 0 15px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+/* Form sections */
+#input-data-section,
+#ai-tools-section {
+    margin-bottom: 25px;
+}
+
+/* Radio button styling */
+input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    flex-shrink: 0;
+}
+
+label {
+    cursor: pointer;
+    line-height: 1.4;
+    flex: 1;
+}
+
+.description {
+    font-size: 0.85em;
+    color: #6c757d;
+    font-weight: normal;
+}
+
+/* Radio option containers */
+.radio-option {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+    transition: background-color 0.2s ease;
+}
+
+.radio-option:hover {
+    background-color: #e9ecef;
+}
+
+.radio-option:has(input[type="radio"]:checked) {
+    background-color: #e3f2fd;
+    border-color: #90caf9;
+}
+
+/* Risk level classes */
+.risk-low {
+    background-color: #d1f2eb;
+    border-color: #52c788;
+}
+
+.risk-medium {
+    background-color: #fff3cd;
+    border-color: #ffc107;
+}
+
+.risk-high {
+    background-color: #ffe0b3;
+    border-color: #fd7e14;
+}
+
+.risk-critical {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+}
+
+.risk-prohibited {
+    background-color: #e2d5f1;
+    border-color: #6f42c1;
+}
+
+/* Results section */
+#results-section {
+    border: 2px solid;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+#results-section div {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Reference section */
+#app > h1:nth-of-type(2) {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-top: 2px solid #e9ecef;
+    padding-top: 40px;
+}
+
+/* Details and summary styling */
+details {
+    margin-top: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background-color: white;
+}
+
+summary {
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #f1f3f4;
+    border-radius: 6px 6px 0 0;
+    user-select: none;
+}
+
+summary:hover {
+    background-color: #e9ecef;
+}
+
+/* Table styling */
+#risk-matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+#risk-matrix-table th {
+    background-color: #495057;
+    color: white;
+    padding: 12px 8px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#risk-matrix-table td {
+    padding: 10px 8px;
+    border: 1px solid #dee2e6;
+    vertical-align: top;
+}
+
+#risk-matrix-table tr.risk-low,
+#risk-matrix-table tr.risk-medium,
+#risk-matrix-table tr.risk-high,
+#risk-matrix-table tr.risk-critical,
+#risk-matrix-table tr.risk-prohibited {
+    /* Override alternating row colors with risk level colors */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    #app {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    fieldset {
+        padding: 15px;
+    }
+    
+    #risk-matrix-table {
+        font-size: 0.8em;
+    }
+    
+    #risk-matrix-table th,
+    #risk-matrix-table td {
+        padding: 8px 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+    }
+    
+    fieldset {
+        padding: 10px;
+    }
+    
+    label {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+    
+    #risk-matrix-table {
+        font-size: 0.75em;
+    }
+    
+    #risk-matrix-table th,
+    #risk-matrix-table td {
+        padding: 6px 4px;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Data Risk Assessment</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>AI Data Risk Assessment</h1>
+        
+        <fieldset>
+            <legend>Risk Assessment Tool</legend>
+            <form id="risk-assessment-form">
+                <div id="input-data-section">
+                    <h2>Select Input Data Type</h2>
+                    <div id="input-data-options">
+                        <!-- Radio buttons for input data types will be generated here -->
+                    </div>
+                </div>
+
+                <div id="ai-tools-section">
+                    <h2>Select AI Tool</h2>
+                    <div id="ai-tools-options">
+                        <!-- Radio buttons for AI tools will be generated here -->
+                    </div>
+                </div>
+
+                <div id="results-section" style="display: none;">
+                    <h2>Risk Assessment Results</h2>
+                    <div id="risk-score"></div>
+                    <div id="risk-level"></div>
+                    <div id="risk-action"></div>
+                    <div id="risk-approver"></div>
+                </div>
+            </form>
+        </fieldset>
+
+        <h1>Risk Assessment Reference</h1>
+        <p>The table below shows all possible risk combinations for your reference. Use this to understand how different data types and AI tools combine to create risk scores.</p>
+
+        <details id="risk-matrix-section">
+            <summary>View All Risk Combinations</summary>
+            <div id="risk-matrix-container">
+                <table id="risk-matrix-table" border="1" style="border-collapse: collapse; width: 100%; margin-top: 10px;">
+                    <thead>
+                        <tr>
+                            <th>Input Data Type</th>
+                            <th>AI Tool</th>
+                            <th>Risk Score</th>
+                            <th>Risk Level</th>
+                            <th>Action Required</th>
+                            <th>Approver</th>
+                        </tr>
+                    </thead>
+                    <tbody id="risk-matrix-body">
+                        <!-- Table rows will be generated here -->
+                    </tbody>
+                </table>
+            </div>
+        </details>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+{
+  "input_data": {
+    "Public": {
+      "score": 1,
+      "description": "Publicly available information, marketing materials, general documentation"
+    },
+    "Internal": {
+      "score": 2,
+      "description": "Internal processes, non-sensitive business data, general employee information"
+    },
+    "Confidential": {
+      "score": 3,
+      "description": "Financial data, strategic plans, customer information, internal communications"
+    },
+    "Restricted": {
+      "score": 4,
+      "description": "Personal identifiable information (PII), health records, legal documents"
+    },
+    "Classified": {
+      "score": 5,
+      "description": "Trade secrets, highly sensitive IP, regulatory compliance data, security credentials"
+    }
+  },
+  "ai_tools": {
+    "Grammarly": {
+      "type": "Basic AI",
+      "provider": "Standard",
+      "modifier": 0
+    },
+    "Google Translate": {
+      "type": "Basic AI",
+      "provider": "Standard",
+      "modifier": 0
+    },
+    "ChatGPT (Public)": {
+      "type": "Content Generation",
+      "provider": "Public/Consumer",
+      "modifier": 2
+    },
+    "GitHub Copilot Enterprise": {
+      "type": "Content Generation",
+      "provider": "Enterprise",
+      "modifier": 1
+    },
+    "Ollama": {
+      "type": "Content Generation",
+      "provider": "Local",
+      "modifier": 0
+    },
+    "Power BI AI": {
+      "type": "Analytics",
+      "provider": "Local/Enterprise",
+      "modifier": 0
+    },
+    "Azure ML Studio": {
+      "type": "Analytics",
+      "provider": "Cloud Enterprise",
+      "modifier": 1
+    },
+    "Databricks ML": {
+      "type": "Analytics",
+      "provider": "Cloud Enterprise",
+      "modifier": 1
+    },
+    "UiPath AI": {
+      "type": "Advanced",
+      "provider": "Enterprise/Approved",
+      "modifier": 1
+    },
+    "Harvey AI": {
+      "type": "Advanced",
+      "provider": "Specialized",
+      "modifier": 2
+    },
+    "AI Agent (Autonomous)": {
+      "type": "Autonomous",
+      "provider": "High-Risk",
+      "modifier": 3
+    }
+  },
+  "ai_type_scores": {
+    "Basic AI": 1,
+    "Content Generation": 2,
+    "Analytics": 3,
+    "Advanced": 4,
+    "Autonomous": 5
+  },
+  "risk_levels": [
+    {
+      "range": [
+        2,
+        4
+      ],
+      "level": "LOW",
+      "action": "✅ Proceed",
+      "approver": "None"
+    },
+    {
+      "range": [
+        5,
+        6
+      ],
+      "level": "MEDIUM",
+      "action": "⚠️ Manager Approval",
+      "approver": "Manager"
+    },
+    {
+      "range": [
+        7,
+        8
+      ],
+      "level": "HIGH",
+      "action": "🛡️ Security Officer Review",
+      "approver": "Security Officer"
+    },
+    {
+      "range": [
+        9,
+        10
+      ],
+      "level": "CRITICAL",
+      "action": "🚫 CISO + Legal Review",
+      "approver": "CISO + Legal"
+    },
+    {
+      "range": [
+        11,
+        99
+      ],
+      "level": "PROHIBITED",
+      "action": "🚫 Not Allowed",
+      "approver": "N/A"
+    }
+  ]
+}
