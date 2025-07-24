@@ -49,7 +49,7 @@ The application uses 5 risk levels with distinct color schemes:
 - Maintain compatibility with Firefox and Chrome
 - Keep the application self-contained (no external dependencies)
 - Follow existing code patterns and CSS class naming conventions
-- Use the `.radio-option` class for radio button containers
+- Use classes for styling instead of inline CSS
 - Apply risk level classes (`.risk-low`, `.risk-medium`, etc.) for consistent styling
 
 ## Data Configuration
@@ -58,6 +58,6 @@ Risk calculations are based on:
 - Input data sensitivity scores (1-5)
 - AI tool type base scores (1-5) 
 - Tool-specific modifiers (0-3)
-- Total score determines risk level and required approvals
+- The total score determines risk level and required approvals
 
 The `assets/risk-categories.json` file contains all configuration data and can be modified to adjust risk parameters without code changes.
