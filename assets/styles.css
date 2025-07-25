@@ -253,3 +253,29 @@ summary:hover {
         padding: 6px 4px;
     }
 }
+
+/* Footer styling */
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #495057;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
