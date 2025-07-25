@@ -269,13 +269,25 @@ footer p {
 }
 
 footer a {
-    color: #495057;
+    color: #007bff;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.2s ease;
+    transition: all 0.2s ease;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+footer a:visited {
+    color: #007bff;
 }
 
 footer a:hover {
-    color: #2c3e50;
+    color: #0056b3;
     text-decoration: underline;
+}
+
+footer a:active {
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+    border: 1px solid rgba(0, 123, 255, 0.2);
 }
