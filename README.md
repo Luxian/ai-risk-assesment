@@ -2,6 +2,8 @@
 
 A web-based application to help employees evaluate the risk associated with using AI tools based on the type of data they plan to process.
 
+**[View Live Application](https://luxian.github.io/ai-risk-assesment/)**
+
 ## Overview
 
 This single-page application provides a structured approach to AI risk assessment by evaluating two key factors:
@@ -80,6 +82,3 @@ To modify risk categories, data types, or AI tools:
 - ✅ Safari
 - ✅ Edge
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
