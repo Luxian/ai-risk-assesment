@@ -1,0 +1,226 @@
+{
+  "en": {
+    "pageTitle": "AI Data Risk Assessment",
+    "mainTitle": "AI Data Risk Assessment",
+    "formLegend": "Risk Assessment Tool",
+    "inputDataTitle": "Select Input Data Type",
+    "aiToolsTitle": "Select AI Tool",
+    "resultsTitle": "Risk Assessment Results",
+    "referenceTitle": "Risk Assessment Reference",
+    "referenceDescription": "The table below shows all possible risk combinations for your reference. Use this to understand how different data types and AI tools combine to create risk scores.",
+    "viewCombinations": "View All Risk Combinations",
+    "tableHeaders": {
+      "inputDataType": "Input Data Type",
+      "aiTool": "AI Tool",
+      "riskScore": "Risk Score",
+      "riskLevel": "Risk Level",
+      "actionRequired": "Action Required",
+      "approver": "Approver"
+    },
+    "footerLink": "View on GitHub",
+    "inputDataTypes": {
+      "Public": {
+        "name": "Public",
+        "description": "Publicly available information, marketing materials, general documentation"
+      },
+      "Internal": {
+        "name": "Internal",
+        "description": "Internal processes, non-sensitive business data, general employee information"
+      },
+      "Confidential": {
+        "name": "Confidential",
+        "description": "Financial data, strategic plans, customer information, internal communications"
+      },
+      "Restricted": {
+        "name": "Restricted",
+        "description": "Personal identifiable information (PII), health records, legal documents"
+      },
+      "Classified": {
+        "name": "Classified",
+        "description": "Trade secrets, highly sensitive IP, regulatory compliance data, security credentials"
+      }
+    },
+    "riskActions": {
+      "✅ Proceed": "✅ Proceed",
+      "⚠️ Manager Approval": "⚠️ Manager Approval",
+      "🛡️ Security Officer Review": "🛡️ Security Officer Review",
+      "🚫 CISO + Legal Review": "🚫 CISO + Legal Review",
+      "🚫 Not Allowed": "🚫 Not Allowed"
+    },
+    "approvers": {
+      "None": "None",
+      "Manager": "Manager",
+      "Security Officer": "Security Officer",
+      "CISO + Legal": "CISO + Legal",
+      "N/A": "N/A"
+    }
+  },
+  "de": {
+    "pageTitle": "KI-Datenrisikobewertung",
+    "mainTitle": "KI-Datenrisikobewertung",
+    "formLegend": "Risikobewertungstool",
+    "inputDataTitle": "Eingabedatentyp auswählen",
+    "aiToolsTitle": "KI-Tool auswählen",
+    "resultsTitle": "Ergebnisse der Risikobewertung",
+    "referenceTitle": "Risikobewertungsreferenz",
+    "referenceDescription": "Die nachstehende Tabelle zeigt alle möglichen Risikokombinationen als Referenz. Verwenden Sie diese, um zu verstehen, wie sich verschiedene Datentypen und KI-Tools zu Risikoscores kombinieren.",
+    "viewCombinations": "Alle Risikokombinationen anzeigen",
+    "tableHeaders": {
+      "inputDataType": "Eingabedatentyp",
+      "aiTool": "KI-Tool",
+      "riskScore": "Risikoscore",
+      "riskLevel": "Risikoniveau",
+      "actionRequired": "Erforderliche Maßnahme",
+      "approver": "Genehmiger"
+    },
+    "footerLink": "Auf GitHub anzeigen",
+    "inputDataTypes": {
+      "Public": {
+        "name": "Öffentlich",
+        "description": "Öffentlich verfügbare Informationen, Marketingmaterialien, allgemeine Dokumentation"
+      },
+      "Internal": {
+        "name": "Intern",
+        "description": "Interne Prozesse, nicht-sensible Geschäftsdaten, allgemeine Mitarbeiterinformationen"
+      },
+      "Confidential": {
+        "name": "Vertraulich",
+        "description": "Finanzdaten, strategische Pläne, Kundeninformationen, interne Kommunikation"
+      },
+      "Restricted": {
+        "name": "Eingeschränkt",
+        "description": "Personenbezogene Daten (PII), Gesundheitsakten, Rechtsdokumente"
+      },
+      "Classified": {
+        "name": "Geheim",
+        "description": "Geschäftsgeheimnisse, hochsensibles geistiges Eigentum, regulatorische Compliance-Daten, Sicherheitsanmeldedaten"
+      }
+    },
+    "riskActions": {
+      "✅ Proceed": "✅ Fortfahren",
+      "⚠️ Manager Approval": "⚠️ Manager-Genehmigung",
+      "🛡️ Security Officer Review": "🛡️ Sicherheitsbeauftragten-Prüfung",
+      "🚫 CISO + Legal Review": "🚫 CISO + Rechtsprüfung",
+      "🚫 Not Allowed": "🚫 Nicht erlaubt"
+    },
+    "approvers": {
+      "None": "Keine",
+      "Manager": "Manager",
+      "Security Officer": "Sicherheitsbeauftragter",
+      "CISO + Legal": "CISO + Rechtsabteilung",
+      "N/A": "N/A"
+    }
+  },
+  "fr": {
+    "pageTitle": "Évaluation des Risques de Données IA",
+    "mainTitle": "Évaluation des Risques de Données IA",
+    "formLegend": "Outil d'Évaluation des Risques",
+    "inputDataTitle": "Sélectionner le Type de Données d'Entrée",
+    "aiToolsTitle": "Sélectionner l'Outil IA",
+    "resultsTitle": "Résultats de l'Évaluation des Risques",
+    "referenceTitle": "Référence d'Évaluation des Risques",
+    "referenceDescription": "Le tableau ci-dessous montre toutes les combinaisons de risques possibles pour votre référence. Utilisez-le pour comprendre comment différents types de données et outils IA se combinent pour créer des scores de risque.",
+    "viewCombinations": "Voir Toutes les Combinaisons de Risques",
+    "tableHeaders": {
+      "inputDataType": "Type de Données d'Entrée",
+      "aiTool": "Outil IA",
+      "riskScore": "Score de Risque",
+      "riskLevel": "Niveau de Risque",
+      "actionRequired": "Action Requise",
+      "approver": "Approbateur"
+    },
+    "footerLink": "Voir sur GitHub",
+    "inputDataTypes": {
+      "Public": {
+        "name": "Public",
+        "description": "Informations publiquement disponibles, matériel marketing, documentation générale"
+      },
+      "Internal": {
+        "name": "Interne",
+        "description": "Processus internes, données commerciales non sensibles, informations générales des employés"
+      },
+      "Confidential": {
+        "name": "Confidentiel",
+        "description": "Données financières, plans stratégiques, informations clients, communications internes"
+      },
+      "Restricted": {
+        "name": "Restreint",
+        "description": "Informations d'identification personnelle (PII), dossiers de santé, documents juridiques"
+      },
+      "Classified": {
+        "name": "Classifié",
+        "description": "Secrets commerciaux, propriété intellectuelle hautement sensible, données de conformité réglementaire, identifiants de sécurité"
+      }
+    },
+    "riskActions": {
+      "✅ Proceed": "✅ Procéder",
+      "⚠️ Manager Approval": "⚠️ Approbation du Manager",
+      "🛡️ Security Officer Review": "🛡️ Examen de l'Officier de Sécurité",
+      "🚫 CISO + Legal Review": "🚫 Examen CISO + Juridique",
+      "🚫 Not Allowed": "🚫 Non Autorisé"
+    },
+    "approvers": {
+      "None": "Aucun",
+      "Manager": "Manager",
+      "Security Officer": "Officier de Sécurité",
+      "CISO + Legal": "CISO + Juridique",
+      "N/A": "N/A"
+    }
+  },
+  "it": {
+    "pageTitle": "Valutazione del Rischio Dati IA",
+    "mainTitle": "Valutazione del Rischio Dati IA",
+    "formLegend": "Strumento di Valutazione del Rischio",
+    "inputDataTitle": "Seleziona il Tipo di Dati di Input",
+    "aiToolsTitle": "Seleziona lo Strumento IA",
+    "resultsTitle": "Risultati della Valutazione del Rischio",
+    "referenceTitle": "Riferimento Valutazione del Rischio",
+    "referenceDescription": "La tabella sottostante mostra tutte le possibili combinazioni di rischio per il vostro riferimento. Utilizzatela per capire come diversi tipi di dati e strumenti IA si combinano per creare punteggi di rischio.",
+    "viewCombinations": "Visualizza Tutte le Combinazioni di Rischio",
+    "tableHeaders": {
+      "inputDataType": "Tipo di Dati di Input",
+      "aiTool": "Strumento IA",
+      "riskScore": "Punteggio di Rischio",
+      "riskLevel": "Livello di Rischio",
+      "actionRequired": "Azione Richiesta",
+      "approver": "Approvatore"
+    },
+    "footerLink": "Visualizza su GitHub",
+    "inputDataTypes": {
+      "Public": {
+        "name": "Pubblico",
+        "description": "Informazioni pubblicamente disponibili, materiali di marketing, documentazione generale"
+      },
+      "Internal": {
+        "name": "Interno",
+        "description": "Processi interni, dati aziendali non sensibili, informazioni generali dei dipendenti"
+      },
+      "Confidential": {
+        "name": "Riservato",
+        "description": "Dati finanziari, piani strategici, informazioni clienti, comunicazioni interne"
+      },
+      "Restricted": {
+        "name": "Limitato",
+        "description": "Informazioni di identificazione personale (PII), cartelle cliniche, documenti legali"
+      },
+      "Classified": {
+        "name": "Classificato",
+        "description": "Segreti commerciali, proprietà intellettuale altamente sensibile, dati di conformità normativa, credenziali di sicurezza"
+      }
+    },
+    "riskActions": {
+      "✅ Proceed": "✅ Procedi",
+      "⚠️ Manager Approval": "⚠️ Approvazione Manager",
+      "🛡️ Security Officer Review": "🛡️ Revisione Ufficiale di Sicurezza",
+      "🚫 CISO + Legal Review": "🚫 Revisione CISO + Legale",
+      "🚫 Not Allowed": "🚫 Non Consentito"
+    },
+    "approvers": {
+      "None": "Nessuno",
+      "Manager": "Manager",
+      "Security Officer": "Ufficiale di Sicurezza",
+      "CISO + Legal": "CISO + Legale",
+      "N/A": "N/A"
+    }
+  }
+}

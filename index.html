@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Data Risk Assessment</title>
+    <title data-i18n="pageTitle">AI Data Risk Assessment</title>
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
     <div id="app">
-        <h1>AI Data Risk Assessment</h1>
+        <div id="language-selector">
+            <button class="language-btn active" data-lang="en" title="English">EN</button>
+            <button class="language-btn" data-lang="de" title="Deutsch">DE</button>
+            <button class="language-btn" data-lang="fr" title="Français">FR</button>
+            <button class="language-btn" data-lang="it" title="Italiano">IT</button>
+        </div>
+        <h1 data-i18n="mainTitle">AI Data Risk Assessment</h1>
         
         <fieldset>
-            <legend>Risk Assessment Tool</legend>
+            <legend data-i18n="formLegend">Risk Assessment Tool</legend>
             <form id="risk-assessment-form">
                 <div id="input-data-section">
-                    <h2>Select Input Data Type</h2>
+                    <h2 data-i18n="inputDataTitle">Select Input Data Type</h2>
                     <div id="input-data-options">
                         <!-- Radio buttons for input data types will be generated here -->
                     </div>
                 </div>
 
                 <div id="ai-tools-section">
-                    <h2>Select AI Tool</h2>
+                    <h2 data-i18n="aiToolsTitle">Select AI Tool</h2>
                     <div id="ai-tools-options">
                         <!-- Radio buttons for AI tools will be generated here -->
                     </div>
                 </div>
 
                 <div id="results-section" style="display: none;">
-                    <h2>Risk Assessment Results</h2>
+                    <h2 data-i18n="resultsTitle">Risk Assessment Results</h2>
                     <div id="risk-score"></div>
                     <div id="risk-level"></div>
                     <div id="risk-action"></div>
@@ -37,21 +43,21 @@
             </form>
         </fieldset>
 
-        <h1>Risk Assessment Reference</h1>
-        <p>The table below shows all possible risk combinations for your reference. Use this to understand how different data types and AI tools combine to create risk scores.</p>
+        <h1 data-i18n="referenceTitle">Risk Assessment Reference</h1>
+        <p data-i18n="referenceDescription">The table below shows all possible risk combinations for your reference. Use this to understand how different data types and AI tools combine to create risk scores.</p>
 
         <details id="risk-matrix-section">
-            <summary>View All Risk Combinations</summary>
+            <summary data-i18n="viewCombinations">View All Risk Combinations</summary>
             <div id="risk-matrix-container">
                 <table id="risk-matrix-table" border="1" style="border-collapse: collapse; width: 100%; margin-top: 10px;">
                     <thead>
                         <tr>
-                            <th>Input Data Type</th>
-                            <th>AI Tool</th>
-                            <th>Risk Score</th>
-                            <th>Risk Level</th>
-                            <th>Action Required</th>
-                            <th>Approver</th>
+                            <th data-i18n="tableHeaders.inputDataType">Input Data Type</th>
+                            <th data-i18n="tableHeaders.aiTool">AI Tool</th>
+                            <th data-i18n="tableHeaders.riskScore">Risk Score</th>
+                            <th data-i18n="tableHeaders.riskLevel">Risk Level</th>
+                            <th data-i18n="tableHeaders.actionRequired">Action Required</th>
+                            <th data-i18n="tableHeaders.approver">Approver</th>
                         </tr>
                     </thead>
                     <tbody id="risk-matrix-body">
@@ -62,7 +68,7 @@
         </details>
 
         <footer>
-            <p><a href="https://github.com/Luxian/ai-risk-assesment">View on GitHub</a></p>
+            <p><a href="https://github.com/Luxian/ai-risk-assesment" data-i18n="footerLink">View on GitHub</a></p>
         </footer>
     </div>
 
